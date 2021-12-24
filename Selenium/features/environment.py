@@ -1,4 +1,4 @@
-from behave import fixture, use_fixture
+from behave import fixture
 from main import Driver
 
 @fixture
