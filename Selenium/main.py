@@ -61,10 +61,3 @@ class Driver(object):
         self.delete_row(name)
         self.check_existence(name)
         self.driver.quit()
-
-
-#####################################################################################################################
-
-"""
-drive = Driver()
-drive.execute("https://opensource-demo.orangehrmlive.com/", "Smith", "CAD - Canadian Dollar", "1500", "3000")"""
