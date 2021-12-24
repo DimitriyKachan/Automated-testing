@@ -1,0 +1,12 @@
+Feature: The user can add and delete pay grades
+
+  Scenario: The user can add and delete pay grade with name Smith in canadian dollars with minimum ammount 1500 and maximum ammount 3000
+    Given the user is on the login page ... passed in 0.002s
+    When the user logs in ... passed in 5.369s
+    And the user opens Pay Grades tab ... passed in 1.692s
+    And the user adds new record ... passed in 2.739s
+    Then check for existence ... passed in 0.043s
+    When the user opens Pay Grades tab ... passed in 1.624s
+    And the user deletes this record ... passed in 0.886s
+    Then check for absence ... passed in 0.028s
+
