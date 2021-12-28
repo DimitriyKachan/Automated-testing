@@ -28,7 +28,7 @@ def step_check(context):
 
 @then("check metadata")
 def step_check_meta(context):
-    assert context.dbx.metadata_check(context.db_path), "Wrong file"
+    assert context.dbx.metadata_check(context.db_path, context.hash), "Wrong file"
 
 
 @then("check for absence")
