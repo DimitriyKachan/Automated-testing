@@ -18,19 +18,19 @@ def step_open(context):
 
 @when("the user adds new record")
 def step_add_new(context):
-    context.drive.add_paygrade("Smith", "CAD - Canadian Dollar", "1500", "3000")
+   context.drive.add_paygrade(context.name, context.currency, context.min, context.max)
 
 
 @then("check for existence")
 def step_check(context):
-    assert not context.drive.check_existence("Smith"), "Have not made"
+    assert not context.drive.check_existence(context.name), "Have not made"
 
 
 @when("the user deletes this record")
 def step_delete(context):
-    context.drive.delete_row("Smith")
+    context.drive.delete_row(context.name)
 
 
 @then("check for absence")
 def step_check_del(context):
-    assert not context.drive.check_existence("Smith"), "Have not deleted"
+    assert not context.drive.check_existence(context.name), "Have not deleted"
