@@ -32,8 +32,7 @@ class DRBOX:
         except:
             return True
 
-    def metadata_check(self, path):
-        hash = "6680bbec0d05d3eaac9c8b658c40f28d2f0cb0f245c7b1cabf5a61c35bd03d8e"
+    def metadata_check(self, path, hash):
         if self.dbx.files_get_metadata(path=path).content_hash == hash:
             return True
         else:
