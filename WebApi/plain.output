@@ -1,0 +1,17 @@
+Feature: The user can upload, delete and get metadata
+
+  Scenario: the user uploads a file
+    Given logged in dropbox ... passed in 0.000s
+    When user uploads ... passed in 1.003s
+    Then check for existence ... passed in 0.432s
+
+  Scenario: the user gets metadata
+    Given logged in dropbox ... passed in 0.000s
+    When the user gets metadata ... passed in 0.287s
+    Then check metadata ... passed in 0.299s
+
+  Scenario: the user deletes a file
+    Given logged in dropbox ... passed in 0.001s
+    When user deletes ... passed in 0.704s
+    Then check for absence ... passed in 0.285s
+
